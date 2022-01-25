@@ -1,0 +1,14 @@
+
+			     Algorithmes	  +---- DUMB
+				^		  |
+	----------------->    	|		  +---> DUMB
+BACKEND			     SERVICE		  |@input
+	<-----------------	|		  |
+				+--------------	SMART ---- DUMB
+				|
+				+--------------	SMART ---- DUMB
+						  ^
+						  |@output
+						  +---- DUMB
+						  |
+						  +---- DUMB
