@@ -5,6 +5,10 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {ListTicketsComponent} from './list-tickets/list-tickets.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './app.routes';
 
 
 @NgModule({
@@ -12,9 +16,13 @@ import {ListTicketsComponent} from './list-tickets/list-tickets.component';
         AppComponent,
         ListTicketsComponent,
         TicketComponent,
+        LoginComponent,
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        RouterModule.forRoot(APP_ROUTES,{useHash: false})
     ],
     providers: [
     ],

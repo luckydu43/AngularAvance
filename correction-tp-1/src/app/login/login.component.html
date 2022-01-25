@@ -1,0 +1,7 @@
+<form [formGroup]="formulaire" (ngSubmit)="onSubmit(formulaire)" novalidate>
+    Login
+	<input formControlName="login" type="text">
+    Mot de passe
+	<input formControlName="mdp" type="password">
+	<button [disabled]="!formulaire.valid" type="submit" (click)="validerForm()">Se connecter</button>
+</form>
