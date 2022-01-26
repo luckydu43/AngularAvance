@@ -12,3 +12,6 @@ BACKEND			     SERVICE		  |@input
 						  +---- DUMB
 						  |
 						  +---- DUMB
+ionic = passer d'une app bureau à mobile en 3 j par un dev expérimenté
+permet de dev mobile en angular
+dev JS porteur
