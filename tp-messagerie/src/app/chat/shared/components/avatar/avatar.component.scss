@@ -1,0 +1,31 @@
+$ln-color-white: white;
+$ln-color-primary: #D1E9E9;
+
+.ln-avatar {
+  background: $ln-color-primary;
+  color: $ln-color-white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 100%;
+  margin: 0;
+  line-height: 48px;
+  text-align: center;
+
+
+  &.small {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  &.big {
+    width: 90px;
+    height: 90px;
+    font-size: 2.4rem;
+  }
+
+  &.reversed {
+    background: $ln-color-white;
+    color: $ln-color-primary;
+  }
+}

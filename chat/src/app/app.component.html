@@ -1,0 +1,6 @@
+<form #formTicket="ngForm">
+  <input type="text" name="message" [(ngModel)]="message"/>
+  <button type="submit" [disabled]="!formTicket.valid" (click)="envoyerMessage()">Envoyer</button>
+  <input type="text" name="messages" [(ngModel)]="messages"/>
+  <button type="submit" [disabled]="!formTicket.valid" (click)="recupererMessage()">Recup</button>
+</form>

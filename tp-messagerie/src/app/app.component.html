@@ -1,0 +1,9 @@
+<h1>Notre joli chat</h1>
+
+<ng-container *ngIf="!pseudo">
+  <app-ask-pseudo (choosePseudo)="onChoosePseudo($event)"></app-ask-pseudo>
+</ng-container>
+
+<ng-container *ngIf="pseudo">
+  <app-chat [pseudo]="pseudo"></app-chat>
+</ng-container>

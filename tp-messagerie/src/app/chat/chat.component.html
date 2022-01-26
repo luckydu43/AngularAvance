@@ -1,0 +1,11 @@
+<ul class="chat-thread" #chatView>
+  <li *ngFor="let message of messages" [class.me]="message.pseudo === pseudo" [class.them]="message.pseudo !== pseudo">
+    <log-avatar [name]="message.pseudo" class="avatar"></log-avatar>
+    {{ message.content }}
+  </li>
+</ul>
+
+<form class="chat-window">
+  <input class="chat-window-message" placeholder="Votre message ici" name="chat-window-message" type="text"
+         autocomplete="off" (keyup.enter)="onSendMessage()" [(ngModel)]="message" autofocus/>
+</form>
