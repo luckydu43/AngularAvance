@@ -9,8 +9,9 @@ export class StorageService {
 
     public get({key}: { key: string }): Promise<string> {
         return new Promise((resolve) => {
-            resolve(window.localStorage.getItem(key));
-        });
+            resolve(JSON.parse(window.localStorage.getItem(key) || '{}'));
+
+        })
     }
 
     public set({key, value}: { key: string, value: string }): Promise<boolean> {

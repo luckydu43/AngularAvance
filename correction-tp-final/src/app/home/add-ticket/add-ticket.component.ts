@@ -10,10 +10,10 @@ import { ticketMocks } from "../shared/mock/ticket.mock";
     styleUrls: ['./add-ticket.component.css']
 })
 export class    AddTicketComponent implements OnInit {
-    public ticketActual: Ticket;
-    public requestLoading: boolean;
-    public isEdit: boolean;
-    public idTicket: number;
+    public ticketActual!: Ticket;
+    public requestLoading!: boolean;
+    public isEdit!: boolean;
+    public idTicket!: number;
 
     constructor(private ticketService: TicketsService, private route: ActivatedRoute, private router: Router) {
     }
@@ -21,7 +21,7 @@ export class    AddTicketComponent implements OnInit {
     ngOnInit() {
         this.requestLoading = false;
 
-        let paramId = +this.route.snapshot.params.idTicket;
+        let paramId = +this.route.snapshot.params['idTicket'];
 
         if (paramId) {
             this.initializeEdit(paramId);

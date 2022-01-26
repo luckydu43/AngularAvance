@@ -9,8 +9,8 @@ import {ActivatedRoute, Router} from "@angular/router";
     styleUrls: ['./list-tickets.component.css']
 })
 export class ListTicketsComponent implements OnInit {
-    public tickets: Ticket[];
-    public loadingRequest: boolean;
+    public tickets!: Ticket[];
+    public loadingRequest!: boolean;
 
     constructor(private ticketService: TicketsService, private router: Router, private activatedRoute: ActivatedRoute) {
     }

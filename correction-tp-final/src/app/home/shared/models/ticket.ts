@@ -1,9 +1,9 @@
 export class Ticket {
-    private _name: string;
-    private _description: string;
-    private _expiration: number;
-    private _nbLefts: number;
-    private _urlImage: string;
+    private _name!: string;
+    private _description!: string;
+    private _expiration!: number;
+    private _nbLefts!: number;
+    private _urlImage!: string;
 
     constructor({name = '', description = '', expiration = 0, nbLefts = 0, urlImage = ''}: { name ?: string, description ?: string, expiration ?: number, nbLefts ?: number, urlImage ?: string }) {
         this.name = name;

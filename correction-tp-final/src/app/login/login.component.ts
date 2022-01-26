@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent implements OnInit {
     userForm: any;
-    loadingRequest: boolean;
+    loadingRequest: boolean = false;
 
     constructor(private user: UserService, private router: Router) {
     }

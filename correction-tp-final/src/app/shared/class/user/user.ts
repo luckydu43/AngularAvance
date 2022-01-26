@@ -11,15 +11,15 @@ export interface UserInfosInterface {
 }
 
 export class User {
-    private _pseudo: string;
-    private _birthdate: number;
-    private _email: string;
-    private _firstname: string;
-    private _gender: string;
-    private _lastname: string;
-    private _role: string;
-    private _status: string;
-    private _logged: boolean;
+    private _pseudo!: string;
+    private _birthdate!: number;
+    private _email!: string;
+    private _firstname!: string;
+    private _gender!: string;
+    private _lastname!: string;
+    private _role!: string;
+    private _status!: string;
+    private _logged!: boolean;
 
     constructor() {
         // Initialisation de nos variables

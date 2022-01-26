@@ -9,7 +9,7 @@ import {StorageService} from './shared/providers/storage/storage.service';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    loadingRequest: boolean;
+    loadingRequest!: boolean;
 
     constructor(private user: UserService, private storage: StorageService) {
     }

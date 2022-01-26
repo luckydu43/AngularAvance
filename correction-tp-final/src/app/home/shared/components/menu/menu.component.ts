@@ -8,7 +8,7 @@ import {LinkMenu} from "../../models/link-menu.enum";
 })
 export class MenuComponent implements OnInit {
     @Output() clickMenu = new EventEmitter<LinkMenu>();
-    public links: any[];
+    public links!: any[];
 
     constructor() {
     }
